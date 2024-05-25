@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style3.css">
+  <link rel="icon" type="image" href="BA3.png">
+  <script src="script2.js"></script>
+</head>
+<body>
+  <div class="signup-container">
+    <h1>Welcome!</h1>
+    <p>Create an account to get started.</p>
+    <form id="signup-form" action="signup.php" method="post">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password (min. 8 characters)" required>
+        <span class="password-strength"></span>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+      </div>
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="http://127.0.0.1:5500/E-Learning_11-05-24-main/PAGES/loginpage.html">Login</a></p>
+  </div>
+</body>
+</html>

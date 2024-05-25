@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacist Recruitment Form</title>
+  <link rel="stylesheet" href="pha.css"> </head>
+<body>
+  <h1>Join Our Pharmacy Team!</h1>
+  <p>We're looking for enthusiastic and qualified pharmacists to join our growing team.</p>
+
+  <form action="submit.php" method="post">
+    <h2>Personal Information</h2>
+    <div class="form-group">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+
+    <h2>License and Certifications</h2>
+    <div class="form-group">
+      <label for="license_state">State of Pharmacy License:</label>
+      <select id="license_state" name="license_state" required>
+        <option value="">Select...</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+      <label for="license_number">Pharmacy License Number:</label>
+      <input type="text" id="license_number" name="license_number" required>
+    </div>
+
+    <div class="form-group">
+      <label for="certifications">Additional Certifications (Optional):</label>
+      <input type="text" id="certifications" name="certifications">
+    </div>
+
+    <h2>Experience and Skills</h2>
+    <div class="form-group">
+      <label for="experience_years">Years of Pharmacy Experience:</label>
+      <input type="number" id="experience_years" name="experience_years" required>
+    </div>
+
+    <div class="form-group">
+      <label for="areas_of_expertise">Areas of Expertise (Optional):</label>
+      <textarea id="areas_of_expertise" name="areas_of_expertise" rows="5"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="pharmacy_software">Proficiency in Pharmacy Software (e.g.,:</label>
+      <br>
+      <input type="checkbox" id="software[]" name="software[]" value="EPIC"> EPIC
+      <input type="checkbox" id="software[]" name="software[]" value="McKesson"> McKesson
+      <input type="checkbox" id="software[]" name="software[]" value="InterSystems"> InterSystems
+      <br> (Select all that apply)
+    </div>
+
+    <h2>Availability and Work Preferences</h2>
+    <div class="form-group">
+      <label for="availability_days">Days Available (Select all that apply):</label>
+      <br>
+      <input type="checkbox" id="availability_days[]" name="availability_days[]" value="monday"> Monday
+      <input type="checkbox" id="availability_days[]" name="availability_days[]" value="tuesday"> Tuesday
+      <input type="checkbox" id="availability_days[]" name="availability_days[]" value="wednesday"> Wednesday
+      <input type="checkbox" id="availability_days[]" name="availability_days[]" value="thursday"> Thursday
+      <input type="checkbox" id="availability_days[]" name="availability_days[]" value="friday"> Friday
+      <input type="checkbox" id="availability_days[]" name="availability_days[]" value="saturday"> Saturday
+      <input type="checkbox" id="availability_days[]" name="availability_days[]" value="sunday"> Sunday
+      <br><br>
+    </div>
+
+    <h2>Additional Information</h2>
+      <div class="form-group">
+        <label for="additional_info">Please provide any additional information relevant to your application: (Optional)</label>
+        <textarea id="additional_info" name="additional_info" rows="5"></textarea>
+      </div>
+      <button type="submit">Submit Application</button> 

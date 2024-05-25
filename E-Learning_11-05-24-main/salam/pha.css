@@ -1,0 +1,68 @@
+/* Basic styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray background */
+  }
+  
+  /* Heading and introduction */
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Form container */
+  form {
+    margin: 0 auto;
+    width: 600px; /* Adjust width as needed */
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff; /* White form background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form sections */
+  h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  /* Form groups */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  .form-group textarea {
+    height: 100px;
+  }
+  
+  /* Checkboxes */
+  .form-group input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  

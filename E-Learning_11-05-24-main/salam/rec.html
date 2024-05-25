@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery Man Recruitment Form</title>
+  <link rel="stylesheet" href="rec.css">
+</head>
+<body>
+  <div class="container">
+    <center><h1>Join Our Delivery Team!</h1>
+    <p>We're looking for enthusiastic and reliable individuals to join our growing delivery team.</p>
+
+    <center action="submit.php" method="post">
+      <h2>Personal Information</h2>
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+      <h2>Vehicle Information</h2>
+      <p>Please select the type of vehicle you will be using for deliveries:</p>
+      <div class="form-group">
+        <label for="vehicle_type">Vehicle Type:</label>
+        <select id="vehicle_type" name="vehicle_type" required>
+          <option value="">Select...</option>
+          <option value="car">Car</option>
+          <option value="motorcycle">Motorcycle</option>
+          <option value="bicycle">Bicycle</option>
+          <option value="other">Other (Specify below)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="vehicle_details">Vehicle Details (Year, Make, Model): (Optional)</label>
+        <input type="text" id="vehicle_details" name="vehicle_details">
+      </div>
+
+      <h2>Availability</h2>
+      <p>Please select the days and times you are available to work:</p>
+      <div class="form-group">
+        <label for="availability_days">Days Available:</label>
+        <br>
+        <input type="checkbox" id="availability_days[]" name="availability_days[]" value="monday"> Monday
+        <input type="checkbox" id="availability_days[]" name="availability_days[]" value="tuesday"> Tuesday
+        <input type="checkbox" id="availability_days[]" name="availability_days[]" value="wednesday"> Wednesday
+        <input type="checkbox" id="availability_days[]" name="availability_days[]" value="thursday"> Thursday
+        <input type="checkbox" id="availability_days[]" name="availability_days[]" value="friday"> Friday
+        <input type="checkbox" id="availability_days[]" name="availability_days[]" value="saturday"> Saturday
+        <input type="checkbox" id="availability_days[]" name="availability_days[]" value="sunday"> Sunday
+        <br><br>
+      </div>
+
+      <div class="form-group">
+        <label for="availability_time_start">Available Start Time:</label>
+        <input type="time" id="availability_time_start" name="availability_time_start" required>
+      </div>
+
+      <div class="form-group">
+        <label for="availability_time_end">Available End Time:</label>
+        <input type="time" id="availability_time_end" name="availability_time_end" required>
+      </div>
+
+      <h2>Additional Information</h2>
+      <div class="form-group">
+        <label for="additional_info">Please provide any additional information relevant to your application: (Optional)</label>
+        <textarea id="additional_info" name="additional_info" rows="5"></textarea>
+      </div>
+
+      <button type="submit">Submit Application</button></center>
+    </form>
+  </div>
+</body>
+</html>
